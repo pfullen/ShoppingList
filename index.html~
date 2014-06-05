@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+         <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+          
+    </head>
+    <body>
+   	    <header> <h1> myShopping List </h1>  </header>
+		<section>       
+       
+        	<div class="main"> 
+        	
+							
+				<table class="table">
+			<div class="items">
+		
+            
+				<th> Item </th> <th>Qty </th> <th>Category</th>
+						
+				<br>
+				<tr>
+						<td> French Bread</td>
+						<td> 1</td>
+						<td>Bakery</td>
+						<td class="button"> <button type="button">Edit</button> </td>
+								
+					</tr>	
+			<tr>
+					
+						<td> Peppers</td>
+						<td> 4</td>
+						<td>Produce</td>
+								<td class="button"> <button type="button">Edit</button> </td>
+					</tr>	
+				<tr>
+				
+						<td> Captain Crunch</td>
+						<td> 1</td>
+						<td>Cereal</td>
+						<td class="button"> <button type="button">Edit</button> </td>
+							
+					</tr>	
+				<tr>
+				
+						<td> Paper Plates</td>
+						<td> 1</td>
+						<td>Household</td>
+								<td class="button"> <button type="button">Edit</button> </td>
+								
+								
+					</tr>	 
+				</div>
+				</table>          	
+        	
+        	
+        	<form class "form">
+        	
+		Item	<input type = "text" name="Item">  
+	Qty	<input class="qty" type = "text" name="Qty"> 
+        	<select>
+  <option value="Bakery">Bakery</option>
+  <option value="Produce">Produce</option>
+  <option value="Dairy">Dairy</option>
+  <option value="Household">Household</option>
+  <option value="Baking">Baking</option>
+  <option value="Cereal">Cereal</option>
+  <option value="Snacks">Snacks</option>
+  <option value="Beverages">Beverages</option>
+  <option value="Pets">Pets</option>
+  <option value="Vegetables">Canned Vegatables</option>
+  
+  <br>
+  <br>
+  
+</select>
+        	<br>
+  <button class="add"> Add Item </button>      	
+        	
+        	</form>
+        	
+        	
+      </div>
+
+		</section>
+        <footer> &copy 2014  Nautical Ambitions   </footer>
+        
+    </body>
+</html>
