@@ -106,14 +106,14 @@ $(document).ready(function() {
    
    $('#tblData').on('click', '.editButton', function () {
    
-     // $('#tbleData tbody tr').map(function() {
+      $('#tbleData tbody tr').map(function() {
       
-	//	var par = $(this).parent().parent(); //tr      
-     // var tdItem = par.childern("td:nth-child(1)");
-     // var tdQty = par.children("td:nth-child(2)");
+		var par = $(this).parent().parent(); //tr      
+      var tdItem = par.childern("td:nth-child(1)");
+     var tdQty = par.children("td:nth-child(2)");
       
-     // 	tdItem.html("<input type='text' id='item' value='"+tdName.html()+"'/>");
-      //	 tdQty.html("<input type='text' id='qty' value='"+tdPhone.html()+"'/>");
+      	tdItem.html("<input type='text' id='item' value='"+tdName.html()+"'/>");
+      	 tdQty.html("<input type='text' id='qty' value='"+tdPhone.html()+"'/>");
 
      	
       	
