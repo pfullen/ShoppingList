@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>myShopping List</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,30 +15,44 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400:700' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+ 	 <script src="js/main.js"></script>
          <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+   
           
     </head>
     <body>
    	    <header> <h1> myShopping List </h1>  </header>
-		<section>       
-       
+		
+		
+<section>		
+
         	<div class="main"> 
         	
 							
-				<table class="table">
-			<div class="items">
+				<table id='tblData'>
+			
 		
             
-				<th> Item </th> <th>Qty </th> <th>Category</th>
-						
+				<thead>
+				 <tr>				
+				 		<th> Item </th>
+				 	   <th>Qty </th> 
+				 	   <th>Type</th>
+				 	   <th class="button"> <button type="button" class="deleteAll""></button> </th>
+				 </tr>
+				 </thead>
+				 <tbody class="tablebody">
 				<br>
-				<tr>
-						<td> French Bread</td>
-						<td> 1</td>
-						<td>Bakery</td>
-						<td class="button"> <button type="button">Edit</button> </td>
+			
+				<tr >
+						<td > French Bread</td>
+						<td > 1</td>
+						<td >Bakery</td>
+						<td class="button"> <button type="button" class="editButton"></button> </td>
+								<td class="button"> <button type="button" class="deleteButton"></button> </td>
 								
 					</tr>	
 			<tr>
@@ -46,34 +60,44 @@
 						<td> Peppers</td>
 						<td> 4</td>
 						<td>Produce</td>
-								<td class="button"> <button type="button">Edit</button> </td>
+								
+								<td class="button"> <button type="button" class="editButton"></button> </td>
+								<td class="button"> <button type="button" class="deleteButton"></button> </td>
+								
 					</tr>	
-				<tr class="linethrough">
-				
+				<tr>				
 						<td> Captain Crunch</td>
 						<td> 1</td>
 						<td>Cereal</td>
-						<td class="button"> <button type="button">Edit</button> </td>
+						<td class="button"> <button type="button" class="editButton"></button> </td>
+								<td class="button"> <button type="button" class="deleteButton"></button> </td>
+								
 							
 					</tr>	
-				<tr class="linethrough">
+			<!--	<tr >
 				
 						<td> Paper Plates</td>
 						<td> 1</td>
-						<td>Household</td>
+						<td>Household</td>			
 								<td class="button"> <button type="button">Edit</button> </td>
 								
-								
+											
 					</tr>	 
-				</div>
+			-->		
+		
+				</tbody>
+				<div class="add">
+				<button class "add" id="addButton">  </button>
+				</div>   
 				</table>          	
         	
+        	<div class="form">
         	
-        	<form class "form">
-        	
-		Item	<input type = "text" name="Item">  
-	Qty	<input class="qty" type = "text" name="Qty"> 
-        	<select>
+        	<form id="form1" name="form1" method="post" action="">
+        	<div class="input">
+		Item	<input id="item"type = "text" name="item" align="center">  
+	Qty	   <input id="qty" type = "text" name="qty" align = "center"> 
+        	<select align= "center">
   <option value="Bakery">Bakery</option>
   <option value="Produce">Produce</option>
   <option value="Dairy">Dairy</option>
@@ -90,15 +114,20 @@
   
 </select>
         	<br>
-  <button class="add"> Add Item </button>      	
-        	
+    			</div>
+        		<button class="add2" id="formadd">  Add Item </button>
+        		<button class="add2" id="cancel">  Cancel </button>
         	</form>
         	
-        	
+         
       </div>
-
-		</section>
-        <footer> &copy 2014  Nautical Ambitions   </footer>
+</section>
+		
+		
+        <footer> 
+				<p>  &copy 2014  Nautical Ambitions </p>
+        
+          </footer>
         
     </body>
 </html>
