@@ -44,9 +44,10 @@ $(document).ready(function() {
 	//$('td').hover(function () {
 	//$(this).addClass('linethrough');
 	
-	/*
+	//  click + to show form   reset form values to null
 	
-    $('.add').click(function () {
+    $('#addButton').click(function () {
+    	alert('ni hao');
     	var itemValue =
 				$('input[name="item"').val("");
 			var qtyValue = 
@@ -56,7 +57,7 @@ $(document).ready(function() {
     
     
     });
-   
+   /*
    $('form').submit(function(event){ 
   			 event.preventDefault(); 
    });
