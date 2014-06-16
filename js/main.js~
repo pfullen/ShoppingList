@@ -2,37 +2,50 @@ $(document).ready(function() {
 	
 	
 	
-		/*$('.tablebody').on('click', 'li', function(){ 
+	//	$('.tablebody').on('click', 'li', function(){ 
 		
 		
-		$(this).parent().toggleClass("linethrough")
-		});
+	//	$(this).parent().toggleClass("linethrough")
+	//	});
 		
-/*
+
 	
-	$('#deleteAll').hover(function () {
+	/*$('#deleteAll').hover(function () {
 		alert('hello';)
 		$(this).css("background-color","#b8c6df");
 		},function () {
 		$(this).css("background-color","lightgrey");		
 		})
 	
-*/	
+*/
 	
-	$('#tablebody ul').hover(function () {
+	$('#tablebody li').hover(function () {
 		
-		$(this).children().css("background-color","#b8c6df");
+		$(this).parent().css("background-color","#b8c6df");
+		},function () {
+		$(this).parent().css("background-color","");		
+		});
+   
+   $('button').hover(function () {
+		
+		$(this).css("background-color","#b8c6df");
 		},function () {
 		$(this).css("background-color","");		
 		});
-   
+	
+	$('#addButton').hover(function () {
+		
+		$(this).css("background-color","grey");
+		},function () {
+		$(this).css("background-color","");		
+		});
 	
 	
 	//$('td').hover(function () {
 	//$(this).addClass('linethrough');
 	
-	
 	/*
+	
     $('.add').click(function () {
     	var itemValue =
 				$('input[name="item"').val("");
@@ -61,7 +74,8 @@ $(document).ready(function() {
 				$(':selected').val();				
 					
 					
-			/*$('#formadd').validate({
+			
+			$('#formadd').validate({
 				rules:{
 					name:	'required',
 					item: {
@@ -152,8 +166,8 @@ $(document).ready(function() {
 				$('tbody').children().remove();
 				
 				});	
-			*/
-							   
+		*/	
+									   
    });
    
     
