@@ -2,30 +2,37 @@ $(document).ready(function() {
 	
 	
 	
-		$('#tblData').on('click', 'td', function(){ 
+		/*$('.tablebody').on('click', 'li', function(){ 
+		
+		
 		$(this).parent().toggleClass("linethrough")
 		});
 		
-
+/*
 	
-	$('button').hover(function () {
+	$('#deleteAll').hover(function () {
+		alert('hello';)
 		$(this).css("background-color","#b8c6df");
 		},function () {
 		$(this).css("background-color","lightgrey");		
 		})
 	
-	$('td').hover(function () {
-		$(this).parent().css("background-color","#b8c6df");
+*/	
+	
+	$('#tablebody ul').hover(function () {
+		
+		$(this).children().css("background-color","#b8c6df");
 		},function () {
-		$(this).parent().css("background-color","");		
+		$(this).css("background-color","");		
 		});
+   
 	
 	
 	//$('td').hover(function () {
 	//$(this).addClass('linethrough');
 	
 	
-	
+	/*
     $('.add').click(function () {
     	var itemValue =
 				$('input[name="item"').val("");
@@ -68,7 +75,7 @@ $(document).ready(function() {
 										
 					}
 				}
-		})	 */							
+		})	 					
 					
 			$('#tblData tbody').append(
 			
@@ -106,14 +113,14 @@ $(document).ready(function() {
    
    $('#tblData').on('click', '.editButton', function () {
    
-     // $('#tbleData tbody tr').map(function() {
+      $('#tbleData tbody tr').map(function() {
       
-	//	var par = $(this).parent().parent(); //tr      
-     // var tdItem = par.childern("td:nth-child(1)");
-     // var tdQty = par.children("td:nth-child(2)");
+		var par = $(this).parent().parent(); //tr      
+      var tdItem = par.childern("td:nth-child(1)");
+     var tdQty = par.children("td:nth-child(2)");
       
-     // 	tdItem.html("<input type='text' id='item' value='"+tdName.html()+"'/>");
-      //	 tdQty.html("<input type='text' id='qty' value='"+tdPhone.html()+"'/>");
+      	tdItem.html("<input type='text' id='item' value='"+tdName.html()+"'/>");
+      	 tdQty.html("<input type='text' id='qty' value='"+tdPhone.html()+"'/>");
 
      	
       	
@@ -145,7 +152,7 @@ $(document).ready(function() {
 				$('tbody').children().remove();
 				
 				});	
-				
+			*/
 							   
    });
    

@@ -2,30 +2,37 @@ $(document).ready(function() {
 	
 	
 	
-		$('#tblData').on('click', 'td', function(){ 
+		/*$('.tablebody').on('click', 'li', function(){ 
+		
+		
 		$(this).parent().toggleClass("linethrough")
 		});
 		
-
+/*
 	
-	$('button').hover(function () {
+	$('#deleteAll').hover(function () {
+		alert('hello';)
 		$(this).css("background-color","#b8c6df");
 		},function () {
 		$(this).css("background-color","lightgrey");		
 		})
 	
-	$('td').hover(function () {
-		$(this).parent().css("background-color","#b8c6df");
+*/	
+	
+	$('#tablebody ul').hover(function () {
+		
+		$(this).children().css("background-color","#b8c6df");
 		},function () {
-		$(this).parent().css("background-color","");		
+		$(this).children().css("background-color","");		
 		});
+   
 	
 	
 	//$('td').hover(function () {
 	//$(this).addClass('linethrough');
 	
 	
-	
+	/*
     $('.add').click(function () {
     	var itemValue =
 				$('input[name="item"').val("");
@@ -68,7 +75,7 @@ $(document).ready(function() {
 										
 					}
 				}
-		})	 */							
+		})	 					
 					
 			$('#tblData tbody').append(
 			
@@ -145,7 +152,7 @@ $(document).ready(function() {
 				$('tbody').children().remove();
 				
 				});	
-				
+			*/
 							   
    });
    

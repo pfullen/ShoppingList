@@ -31,7 +31,7 @@
 
         	<div class="main"> 
         	
-     				 <button type="button" class="deleteAll"> </button>
+     				 <button class="button" id="deleteAll"> </button>
 		          <button class "add" id="addButton">  </button>
 			<div id='table'>          
 				<div class="row">
@@ -47,9 +47,9 @@
 				
 				 <ul>
 					
-						<li id="item"> French Bread</li>
-						<li id="qty" > 1</li>
-						<li id="type" >Bakery</li>
+						<li > French Bread</li>
+						<li > 1</li>
+						<li  >Bakery</li>
 						
 						 	<button class="button" id="editButton"></button> 
 							<button class="button" id="deleteButton"></button> 
