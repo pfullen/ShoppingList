@@ -237,7 +237,16 @@ margin-top: 70px;
 }
 
 
+ul {
+
+display: inline;
+
+
 }
+
+
+
+
 
 .tbody 
 }
@@ -253,6 +262,14 @@ color: darkred;
 	
 
 }
+
+ul .tablebody {
+
+padding-top: 25px;
+
+}
+
+
 
 .row {
 

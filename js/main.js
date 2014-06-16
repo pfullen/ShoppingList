@@ -47,7 +47,7 @@ $(document).ready(function() {
 	//  click + to show form   reset form values to null
 	
     $('#addButton').click(function () {
-    	alert('ni hao');
+    	
     	var itemValue =
 				$('input[name="item"').val("");
 			var qtyValue = 
@@ -57,16 +57,21 @@ $(document).ready(function() {
     
     
     });
-   /*
+    
+   
+    //  Prevent default refresh  
+    
    $('form').submit(function(event){ 
   			 event.preventDefault(); 
    });
    
    
    
+   
+   
    // add function
 		$('#formadd').click(function () {
-		//	alert('Hell0');
+		
 			var itemValue =
 				$('input[name="item"').val();
 			var qtyValue = 
@@ -75,7 +80,7 @@ $(document).ready(function() {
 				$(':selected').val();				
 					
 					
-			
+		 /* require form input values	
 			$('#formadd').validate({
 				rules:{
 					name:	'required',
@@ -90,26 +95,28 @@ $(document).ready(function() {
 										
 					}
 				}
-		})	 					
-					
-			$('#tblData tbody').append(
+		})	 
+		*/
+							
+					// append list with new items
+			$('.main #tablebody').append(
 			
-			'<tr >'+
-				'<td  >'+ itemValue +
-				'</td>'+
-				'<td  >'+ qtyValue +
-				'</td>' +
-				'<td  >'+ category +
-				'</td>' + 
-				'<td class="button">' + 
-				'<button type="button" class="editButton">' +
+			'<ul >'+
+				'<li  >'+ itemValue +
+				'</li>'+
+				'<li  >'+ qtyValue +
+				'</li>' +
+				'<li  >'+ category +
+				'</li>' + 
+				
+		
+				'<button class="button" id="editButton">' +
 				'</button>' +
-				 '</td>' +
-				'<td class="button">' +
-				'<button type="button" class="deleteButton">' +
+			
+				'<button class="button" id="deleteButton">' +
 				'</button>' +
-				 '</td>' +
-			'</tr>'
+			
+				 '</ul>' 
 			);
 			 $('.form').hide();
 			
@@ -123,7 +130,7 @@ $(document).ready(function() {
     	$('.form').hide();
     	});				
 				
-				
+			/*	
    // edit function
    
    $('#tblData').on('click', '.editButton', function () {

@@ -50,11 +50,12 @@
 						<li > French Bread</li>
 						<li > 1</li>
 						<li  >Bakery</li>
+						</ul>
 						
 						 	<button class="button" id="editButton"></button> 
 							<button class="button" id="deleteButton"></button> 
 							
-				</ul>
+				
 						<ul>
 					
 						<li > Beer</li>
