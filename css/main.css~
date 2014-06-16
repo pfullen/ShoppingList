@@ -322,7 +322,7 @@ text-align: left;
 
 
 
-.linethrough {
+li .linethrough {
 
 text-decoration: line-through;
 

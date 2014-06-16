@@ -4,8 +4,8 @@ $(document).ready(function() {
 	
 		$('#tablebody ul').on('click', 'li', function(){ 
 		
-		alert('ni hao')
-		$(this).parent().toggleClass("linethrough")
+		
+		$(this).toggleClass("linethrough")
 		});
 		
 

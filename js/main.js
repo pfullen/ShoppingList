@@ -2,10 +2,10 @@ $(document).ready(function() {
 	
 	
 	
-		$('#tablebody ul').on('click', 'li', function(){ 
+		$('#tablebody ').on('click', 'ul', function(){ 
 		
-		alert('ni hao')
-		$(this).parent().toggleClass("linethrough")
+		
+		$(this).children().toggleClass("linethrough")
 		});
 		
 
