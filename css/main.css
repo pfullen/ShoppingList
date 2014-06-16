@@ -320,7 +320,11 @@ text-align: left;
 }
 
 
-
+ .backgroundcolor {
+ 
+background-color:#b8c6df; 
+ 
+ }
 
  .linethrough {
 
@@ -343,13 +347,18 @@ height: auto;
 }
 
 
+#mainbuttons {
 
+margin: 10px;
+
+
+}
 
 
 button {
 
 padding:5px;
-margin: 0 auto;
+margin: 10px 10px;
 
 border-radius:5px;
 background-color: #b8c6df;

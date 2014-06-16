@@ -320,9 +320,13 @@ text-align: left;
 }
 
 
+ .backgroundcolor {
+ 
+background-color:#b8c6df; 
+ 
+ }
 
-
-li .linethrough {
+ .linethrough {
 
 text-decoration: line-through;
 
@@ -343,7 +347,12 @@ height: auto;
 }
 
 
+#mainbuttons {
 
+margin: 10px;
+
+
+}
 
 
 button {

@@ -21,14 +21,23 @@ $(document).ready(function() {
 	
 
 
-$('#tablebody').on('hover', 'ul', function(){ 
+ $('#tablebody').on('mouseenter','li', function () {
+	  
 	   
-		$(this).parent().css("background-color","#b8c6df");
-		},function () {
-		$(this).parent().css("background-color","");		
+	   
+	$(this).parent().toggleClass("backgroundcolor");
+	//	},function () {
+	//$(this).parent().css("background-color","");		
 		});
 
-
+$('#tablebody').on('mouseleave','li', function () {
+	  
+	   
+	   
+	$(this).parent().toggleClass("backgroundcolor");
+	//	},function () {
+	//$(this).parent().css("background-color","");		
+		});
 
 
 
