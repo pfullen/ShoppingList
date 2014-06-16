@@ -237,9 +237,7 @@ margin-top: 70px;
 }
 
 
-ul {
 
-display: inline;
 
 
 }
@@ -265,7 +263,7 @@ color: darkred;
 
 ul .tablebody {
 
-padding-top: 25px;
+
 
 }
 
@@ -318,34 +316,11 @@ display: inline-block;
 font-size: 1em;
 font-family: Oswald,  Arial, sans-serif;
 margin: 0 20px;
-}
-
-li #item {
-
-
+text-align: left;
 }
 
 
 
-
-#type {
-	
-
-
-
-}
-
-li #qty {
-
-
-
-}
-
-.Tableheader tr{
-
-
-
-}
 
 .linethrough {
 

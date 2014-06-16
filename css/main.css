@@ -316,36 +316,13 @@ display: inline-block;
 font-size: 1em;
 font-family: Oswald,  Arial, sans-serif;
 margin: 0 20px;
-}
-
-li #item {
-
-
+text-align: left;
 }
 
 
 
 
-#type {
-	
-
-
-
-}
-
-li #qty {
-
-
-
-}
-
-.Tableheader tr{
-
-
-
-}
-
-.linethrough {
+li .linethrough {
 
 text-decoration: line-through;
 

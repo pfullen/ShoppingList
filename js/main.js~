@@ -2,11 +2,11 @@ $(document).ready(function() {
 	
 	
 	
-	//	$('.tablebody').on('click', 'li', function(){ 
+		$('#tablebody ul').on('click', 'li', function(){ 
 		
-		
-	//	$(this).parent().toggleClass("linethrough")
-	//	});
+		alert('ni hao')
+		$(this).parent().toggleClass("linethrough")
+		});
 		
 
 	
@@ -19,12 +19,31 @@ $(document).ready(function() {
 	
 */
 	
-	$('#tablebody li').hover(function () {
+
+
+$('#tablebody').on('hover', 'ul', function(){ 
+	   
+		$(this).parent().css("background-color","#b8c6df");
+		},function () {
+		$(this).parent().css("background-color","");		
+		});
+
+
+
+
+
+
+
+/*
+	$('#tablebody li').hover(function(){ 
+	   
 		
 		$(this).parent().css("background-color","#b8c6df");
 		},function () {
 		$(this).parent().css("background-color","");		
 		});
+  
+*/  
    
    $('button').hover(function () {
 		
@@ -99,7 +118,7 @@ $(document).ready(function() {
 		*/
 							
 					// append list with new items
-			$('#tablebody').append(
+			$('.main #tablebody').append(
 			
 			'<ul >'+
 				'<li  >'+ itemValue +
@@ -155,11 +174,11 @@ $(document).ready(function() {
    	
    	
    
-   
+   */
    // delete function
    
-   $('#tblData').on('click', '.deleteButton', function(){ 
-   $(this).parent().parent().remove();
+   $('#tablebody').on('click', '#deleteButton', function(){ 
+   $(this).parent().remove();
     });	
 				
 	
@@ -168,13 +187,13 @@ $(document).ready(function() {
 	// delete all function 
 	
 		
-		$('#tblData').on('click', '.deleteAll', function(){ 
+		$('.main').on('click', '#deleteAll', function(){ 
 				
 			confirm('Are you sure you want to delete all items?');
-				$('tbody').children().remove();
+				$('#tablebody').children().remove();
 				
 				});	
-		*/	
+			
 									   
    });
    
