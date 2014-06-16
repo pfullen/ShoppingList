@@ -31,72 +31,51 @@
 
         	<div class="main"> 
         	
-							
-				<table id='tblData'>
-			
-		
-            
-				<thead>
-				 <tr>				
-				 		<th> Item </th>
-				 	   <th>Qty </th> 
-				 	   <th>Type</th>
-				 	   <th class="button"> <button type="button" class="deleteAll""></button> </th>
-				 </tr>
-				 </thead>
-				 <tbody class="tablebody">
-				<br>
-			
-				<tr >
-						<td > French Bread</td>
-						<td > 1</td>
-						<td >Bakery</td>
-						<td class="button"> <button type="button" class="editButton"></button> </td>
-								<td class="button"> <button type="button" class="deleteButton"></button> </td>
-								
-					</tr>	
-			<tr>
-					
-						<td> Peppers</td>
-						<td> 4</td>
-						<td>Produce</td>
-								
-								<td class="button"> <button type="button" class="editButton"></button> </td>
-								<td class="button"> <button type="button" class="deleteButton"></button> </td>
-								
-					</tr>	
-				<tr>				
-						<td> Captain Crunch</td>
-						<td> 1</td>
-						<td>Cereal</td>
-						<td class="button"> <button type="button" class="editButton"></button> </td>
-								<td class="button"> <button type="button" class="deleteButton"></button> </td>
-								
-							
-					</tr>	
-			<!--	<tr >
+     				 <button type="button" class="deleteAll"> </button>
+		          <button class "add" id="addButton">  </button>
+			<div id='table'>          
+				<div class="row">
+				 <ul class="thead">				
+				 		<li > Item </li>
+				 	   <li >Qty </li> 
+				 	   <li >Type</li>
+				 	    </ul>
+				 
+				 </div>
+			</div>	 
+				 <div class="tablebody">
 				
-						<td> Paper Plates</td>
-						<td> 1</td>
-						<td>Household</td>			
-								<td class="button"> <button type="button">Edit</button> </td>
-								
-											
-					</tr>	 
-			-->		
+				 <ul>
+					
+						<li id="item"> French Bread</li>
+						<li id="qty" > 1</li>
+						<li id="type" >Bakery</li>
+						
+						 	<button class="button" id="editButton"></button> 
+							<button class="button" id="deleteButton"></button> 
+							
+				</ul>
+						<ul>
+					
+						<li > Beer</li>
+						<li  > 12</li>
+						<li  >Beverage</li>
+						
+						 	<button class="button" id="editButton"></button> 
+							<button class="button" id="deleteButton"></button> 
+							
+				</ul>
+			  </div>
+			  	
 		
-				</tbody>
-				<div class="add">
-				<button class "add" id="addButton">  </button>
-				</div>   
-				</table>          	
+			          	
         	
         	<div class="form">
         	
         	<form id="form1" name="form1" method="post" action="">
         	<div class="input">
-		Item	<input type = "text" name="item" align="center">  
-	Qty	<input id="qty" type = "text" name="qty" align = "center"> 
+		Item	<input id="item"type = "text" name="item" align="center">  
+	Qty	   <input id="qty" type = "text" name="qty" align = "center"> 
         	<select align= "center">
   <option value="Bakery">Bakery</option>
   <option value="Produce">Produce</option>
