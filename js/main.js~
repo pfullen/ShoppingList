@@ -128,7 +128,7 @@ $('#tablebody').on('mouseleave','li', function () {
 							
 					// append list with new items
 			$('.main #tablebody').append(
-			
+			'<div class="row">'+
 			'<ul >'+
 				'<li  >'+ itemValue +
 				'</li>'+
@@ -137,14 +137,15 @@ $('#tablebody').on('mouseleave','li', function () {
 				'<li  >'+ category +
 				'</li>' + 
 				
-		
+				'</ul>' +
 				'<button class="button" id="editButton">' +
 				'</button>' +
 			
 				'<button class="button" id="deleteButton">' +
 				'</button>' +
+				'</div>'
 			
-				 '</ul>' 
+				 
 			);
 			 $('.form').hide();
 			

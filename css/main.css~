@@ -103,7 +103,7 @@ textarea {
 body {
  background-image: url('../images/grocerystore.jpg');
  background-repeat:  no-repeat;
- background-size: 150% 130%;
+ background-size: 165% 165%;
 
 
  
@@ -172,11 +172,11 @@ width:1200px;
 .main {
 
   background-image: url('../images/fzm-notebook.texture-28.jpg');
-  background-size:100% auto;
+  background-size:100% 150%;
   width: 60%;
   
   background-color: lightgray;
-  min-height: 120%;
+  min-height: 150%;
   position: relative;
   margin: 0 auto;
   margin-bottom: 0px;
@@ -240,14 +240,13 @@ margin-top: 70px;
 
 
 
-}
 
 
 
 
 
-.tbody 
-}
+
+
 
 ul .thead {
 margin-top: 175px;
@@ -257,14 +256,16 @@ font-size:1.50em;;
 font-family: Oswald, sans-serif;
 font-weight: bold;
 color: darkred;
-	
+border-bottom:2px solid black;
+margin-bottom: 2px;
+padding-bottom: 2px;
 
 }
 
-ul .tablebody {
-
-
-
+#tablebody ul  {
+width: 400px;
+margin-left: -25px;
+display: inline;
 }
 
 
@@ -272,7 +273,7 @@ ul .tablebody {
 .row {
 
 
-border-bottom:2px solid black;
+
 display: inline;
 
 }
@@ -282,19 +283,21 @@ display: inline;
 
 border-bottom: solid 2px black;
 padding-top: 30px;
-
+margin-bottom: 0px;
 
 }
 
-.thead li {
-
-
+.row {
+display: inline;
+width: 600px;
 
 }
 
 #tablebody  {
-width: 575px;
+width: 500px;
 margin: 0 auto;
+
+
 
 
 
@@ -358,7 +361,7 @@ margin: 10px;
 button {
 
 padding:5px;
-margin: 0 auto;
+margin: 10px 10px;
 
 border-radius:5px;
 background-color: #b8c6df;
@@ -434,7 +437,8 @@ margin-right: 10px;
 
 .form {
 display: none;
-width: 60%;
+position: relative;
+width: 45%;
 border: 2px black solid;
 border-radius:5px;
 padding: 10px;

@@ -35,14 +35,14 @@
 			          <button class "add" id="addButton">  </button>
 					</div>          
 			<div id='table'>          
-				<div class="row">
+			
 				 <ul class="thead">				
 				 		<li > Item </li>
 				 	   <li >Qty </li> 
 				 	   <li >Type</li>
 				 	    </ul>
 				 
-				 </div>
+				 
 			</div>	 
 				 <div id="tablebody">
 			
